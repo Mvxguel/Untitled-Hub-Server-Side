@@ -1,0 +1,220 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local UntitledHUbServerSide = Instance.new("ScreenGui")
+local UntitledHubss = Instance.new("ImageLabel")
+local Holder = Instance.new("TextBox")
+local Name = Instance.new("TextLabel")
+local Execute = Instance.new("TextButton")
+local TextButton_Roundify_12px = Instance.new("ImageLabel")
+local TextLabel = Instance.new("TextLabel")
+local UIAspectRatioConstraint = Instance.new("UIAspectRatioConstraint")
+local Close = Instance.new("TextButton")
+local Open = Instance.new("TextButton")
+local UIAspectRatioConstraint_2 = Instance.new("UIAspectRatioConstraint")
+local UITextSizeConstraint = Instance.new("UITextSizeConstraint")
+
+--Properties:
+
+UntitledHUbServerSide.Name = "Untitled HUb Server Side"
+UntitledHUbServerSide.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+
+UntitledHubss.Name = "Untitled Hub ss"
+UntitledHubss.Parent = UntitledHUbServerSide
+UntitledHubss.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+UntitledHubss.BackgroundTransparency = 1.000
+UntitledHubss.BorderColor3 = Color3.fromRGB(27, 42, 53)
+UntitledHubss.Position = UDim2.new(0.414021581, 0, 0.25447318, 0)
+UntitledHubss.Size = UDim2.new(0, 254, 0, 231)
+UntitledHubss.Visible = false
+UntitledHubss.Image = "rbxassetid://3570695787"
+UntitledHubss.ImageColor3 = Color3.fromRGB(30, 30, 30)
+UntitledHubss.ScaleType = Enum.ScaleType.Slice
+UntitledHubss.SliceCenter = Rect.new(100, 100, 100, 100)
+UntitledHubss.SliceScale = 0.120
+UntitledHubss.Draggable = true
+
+Holder.Name = "Holder"
+Holder.Parent = UntitledHubss
+Holder.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Holder.Position = UDim2.new(-0.00285217166, 0, 0.388698101, 0)
+Holder.Size = UDim2.new(0, 254, 0, 50)
+Holder.Font = Enum.Font.SourceSans
+Holder.PlaceholderText = "https://discord.gg/urmNKu98X3"
+Holder.Text = ""
+Holder.TextColor3 = Color3.fromRGB(0, 0, 0)
+Holder.TextSize = 14.000
+
+Name.Name = "Name"
+Name.Parent = UntitledHubss
+Name.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Name.BackgroundTransparency = 1.000
+Name.Position = UDim2.new(0.100523025, 0, -0.00234955549, 0)
+Name.Size = UDim2.new(0, 200, 0, 50)
+Name.Font = Enum.Font.Arial
+Name.Text = "彡Untitled Hub"
+Name.TextColor3 = Color3.fromRGB(255, 255, 255)
+Name.TextSize = 30.000
+
+Execute.Name = "Execute"
+Execute.Parent = UntitledHubss
+Execute.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Execute.BackgroundTransparency = 1.000
+Execute.BorderSizePixel = 0
+Execute.Position = UDim2.new(0.106299214, 0, 0.670995653, 0)
+Execute.Size = UDim2.new(0, 200, 0, 50)
+Execute.Font = Enum.Font.SourceSans
+Execute.Text = " "
+Execute.TextColor3 = Color3.fromRGB(0, 0, 0)
+Execute.TextSize = 14.000
+Execute.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+end)
+
+TextButton_Roundify_12px.Name = "TextButton_Roundify_12px"
+TextButton_Roundify_12px.Parent = Execute
+TextButton_Roundify_12px.Active = true
+TextButton_Roundify_12px.AnchorPoint = Vector2.new(0.5, 0.5)
+TextButton_Roundify_12px.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_Roundify_12px.BackgroundTransparency = 1.000
+TextButton_Roundify_12px.Position = UDim2.new(0.5, 0, 0.5, 0)
+TextButton_Roundify_12px.Selectable = true
+TextButton_Roundify_12px.Size = UDim2.new(1, 0, 1, 0)
+TextButton_Roundify_12px.Image = "rbxassetid://3570695787"
+TextButton_Roundify_12px.ScaleType = Enum.ScaleType.Slice
+TextButton_Roundify_12px.SliceCenter = Rect.new(100, 100, 100, 100)
+TextButton_Roundify_12px.SliceScale = 0.120
+
+TextLabel.Parent = TextButton_Roundify_12px
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.Size = UDim2.new(0, 200, 0, 50)
+TextLabel.Font = Enum.Font.Code
+TextLabel.Text = "Execute"
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextSize = 30.000
+TextLabel.TextWrapped = true
+
+UIAspectRatioConstraint.Parent = UntitledHubss
+UIAspectRatioConstraint.AspectRatio = 1.100
+
+Close.Name = "Close"
+Close.Parent = UntitledHubss
+Close.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Close.BackgroundTransparency = 1.000
+Close.Position = UDim2.new(0.891861618, 0, 0.0515865982, 0)
+Close.Size = UDim2.new(0, 17, 0, 25)
+Close.Font = Enum.Font.SourceSans
+Close.Text = "X"
+Close.TextColor3 = Color3.fromRGB(255, 1, 1)
+Close.TextSize = 14.000
+
+Open.Name = "Open"
+Open.Parent = UntitledHUbServerSide
+Open.BackgroundColor3 = Color3.fromRGB(24, 24, 24)
+Open.Position = UDim2.new(0, 0, 0.930417478, 0)
+Open.Size = UDim2.new(0, 48, 0, 35)
+Open.Font = Enum.Font.SourceSans
+Open.Text = "UHSS"
+Open.TextColor3 = Color3.fromRGB(255, 255, 255)
+Open.TextScaled = true
+Open.TextSize = 14.000
+Open.TextWrapped = true
+
+UIAspectRatioConstraint_2.Parent = Open
+UIAspectRatioConstraint_2.AspectRatio = 1.371
+
+UITextSizeConstraint.Parent = Open
+UITextSizeConstraint.MaxTextSize = 14
+
+-- Scripts:
+
+local function WSABI_fake_script() -- Execute.LocalScript 
+	local script = Instance.new('LocalScript', Execute)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		local input = script.Parent.Parent.Holder
+		script.Parent.Parent.Remote:FireServer(input.Text)
+	end)
+end
+coroutine.wrap(WSABI_fake_script)()
+local function LDVES_fake_script() -- UntitledHubss.Script 
+	local script = Instance.new('Script', UntitledHubss)
+
+	local remote = script.Parent.Remote
+	
+	remote.OnServerEvent:Connect(function(player,ss)
+		require(script.Loadstring)(ss)
+	end)
+end
+coroutine.wrap(LDVES_fake_script)()
+local function ZPYLH_fake_script() -- UntitledHubss.Dragify 
+	local script = Instance.new('LocalScript', UntitledHubss)
+
+	local UIS = game:GetService("UserInputService")
+	function dragify(Frame)
+		dragToggle = nil
+		dragSpeed = 0.15
+		dragInput = nil
+		dragStart = nil
+		dragPos = nil
+		function updateInput(input)
+			Delta = input.Position - dragStart
+			Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + Delta.X, startPos.Y.Scale, startPos.Y.Offset + Delta.Y)
+			game:GetService("TweenService"):Create(Frame, TweenInfo.new(0.15), {Position = Position}):Play()
+		end
+		Frame.InputBegan:Connect(function(input)
+			if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) and UIS:GetFocusedTextBox() == nil then
+				dragToggle = true
+				dragStart = input.Position
+				startPos = Frame.Position
+				input.Changed:Connect(function()
+					if input.UserInputState == Enum.UserInputState.End then
+						dragToggle = false
+					end
+				end)
+			end
+		end)
+		Frame.InputChanged:Connect(function(input)
+			if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+				dragInput = input
+			end
+		end)
+		game:GetService("UserInputService").InputChanged:Connect(function(input)
+			if input == dragInput and dragToggle then
+				updateInput(input)
+			end
+		end)
+	end
+	dragify(script.Parent)
+	
+end
+coroutine.wrap(ZPYLH_fake_script)()
+local function QPKOSF_fake_script() -- Close.LocalScript 
+	local script = Instance.new('LocalScript', Close)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Visible = false
+	end)
+	
+	
+	
+	
+end
+coroutine.wrap(QPKOSF_fake_script)()
+local function IRKOWKX_fake_script() -- Open.LocalScript 
+	local script = Instance.new('LocalScript', Open)
+
+	local frame = script.Parent.Parent["Untitled Hub ss"]  -- change “Test” to the name of the frane
+	local open = false
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		if frame.Visible == false then
+			frame.Visible = true
+		end
+	end)
+	
+end
+coroutine.wrap(IRKOWKX_fake_script)()
